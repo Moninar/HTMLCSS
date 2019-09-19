@@ -1,9 +1,165 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <script src="https://kit.fontawesome.com/502fc5a4d9.js"></script>
-  </head>
-  <body>
-    <i class="fas fa-camera"></i>
-  </body>
+
+<head>
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="https://kit.fontawesome.com/502fc5a4d9.js"></script>
+</head>
+
+<body>
+  <div class="nav">
+    <a class="nav-item" href="#">
+      <i class="fas fa-home"></i>Home
+    </a>
+    <a class="nav-item" href="#">
+      <i class="fas fa-search"></i>Search
+    </a>
+    <a class="nav-item" href="#">
+      <i class="fas fa-envelope"></i>Contact
+    </a>
+    <a class="nav-item" href="#">
+      <i class="fas fa-user"></i>Login
+    </a>
+  </div>
+  <div class="container">
+    <div class="article clearfix">
+      <img src="assets/chimps.jpg" alt="Death Handles Of Chimps">
+      <div class="description">
+        <h3>How Animals Deal with Death</h3>
+        <p>Some animals treat the corpses of community members in specific ways. For example, in social insects, like
+          ants and termites, the dead are eaten, buried or removed from the colony, depending on the cause and context
+          of the death. Corvid birds, including magpies and crows, gather around their deceased, as if having a funeral.
+          And mothers have been seen carrying dead infants for hours to weeks in diverse species, like elephants, whales
+          and dingos.</p>
+      </div>
+    </div>
+    <div class="checkout-cart">
+      <div class="checkout">
+        <div class="checkout-info">
+          <div class="billing">
+            <div class="billing-title">Billing Address</div>
+            <ul>
+              <li>
+                <i class="fas fa-user"></i>Full Name
+                <input class="input-text" placeholder="John M. Doe">
+              </li>
+              <li>
+                <i class="fas fa-envelope"></i>Email
+                <input class="input-text" placeholder="john@example.com">
+              </li>
+              <li>
+                <i class="fas fa-address-card"></i>Address
+                <input class="input-text" placeholder="542 W. 15th Street">
+              </li>
+              <li>
+                <i class="fas fa-university"></i>City
+                <input class="input-text" placeholder="New York">
+              </li>
+              <li>
+                <ul class="small-input">
+                  <li>
+                    State
+                    <input class="input-text" placeholder="NY">
+                  </li>
+                  <li>
+                    Zip
+                    <input class="input-text" placeholder="10001">
+                  </li>
+                </ul>
+              </li>
+              <li class="same-address">
+                <input type="checkbox"> Shipping Address Same as Billing
+              </li>
+            </ul>
+          </div>
+          <div class="payment">
+            <div class="payment-title">Payment</div>
+            <ul>
+              <li>
+                Accepted Cards
+                <div class="accepted-cards">
+                  <i class="fab fa-cc-visa"></i>
+                  <i class="fab fa-cc-amex"></i>
+                  <i class="fab fa-cc-mastercard"></i>
+                  <i class="fab fa-cc-discover"></i>
+                </div>
+              </li>
+              <li>
+                Name on Card
+                <input class="input-text" placeholder="John More Doe">
+              </li>
+              <li>
+                Credit Card Number
+                <input class="input-text" placeholder="1111-2222-3333-4444">
+              </li>
+              <li>
+                Exp Month
+                <input class="input-text" placeholder="September">
+              </li>
+              <li>
+                <ul class="small-input">
+                  <li>
+                    Exp Year
+                    <input class="input-text" placeholder="2018">
+                  </li>
+                  <li>
+                    CVV
+                    <input class="input-text" placeholder="352">
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <button class="checkout-submit">Continue to checkout</button>
+      </div>
+      <div class="cart">
+        <div class="cart-title">
+          <span>Cart</span>
+          <strong><i class="fas fa-shopping-cart"></i>4</strong>
+        </div>
+        <div class="cart-item">
+          <span class="item-name">Item 1</span>
+          <span>$15</span>
+        </div>
+        <div class="cart-item">
+          <span class="item-name">Item 2</span>
+          <span>$5</span>
+        </div>
+        <div class="cart-item">
+          <span class="item-name">Item 3</span>
+          <span>$8</span>
+        </div>
+        <div class="cart-item">
+          <span class="item-name">Item 4</span>
+          <span>$2</span>
+        </div>
+        <div class="cart-total">
+          <span>Total</span>
+          <strong>$30</strong>
+        </div>
+      </div>
+    </div>
+    <div class="timeline clearfix">
+      <div class="entry">
+        <h3 class="msg-title">2019</h3>
+        <p>“I generally start with these letterforms, which include the most straightforward and the most complex. Also,
+          there are just enough letters to evaluate continuous paragraphs of text before adding the rest of the
+          characters.”</p>
+      </div>
+      <div class="entry">
+        <h3 class="msg-title">2018</h3>
+        <p>“This word—the Catalan is the sort of thing making me want
+          to shut down the computer and go home.”</p>
+      </div>
+      <div class="entry">
+        <h3 class="msg-title">2017</h3>
+        <p>“I generally start with these letterforms, which include the most straightforward and the most complex. Also,
+          there are just enough letters to evaluate continuous paragraphs of text before adding the rest of the
+          characters.”</p>
+      </div>
+    </div>
+  </div>
+</body>
+
 </html>

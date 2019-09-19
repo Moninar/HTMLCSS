@@ -1,0 +1,281 @@
+* {
+  font-family: Arial;
+}
+
+body {
+  margin: 0;
+}
+
+ul,
+li {
+  margin : 0;
+  padding: 0;
+}
+
+.nav {
+  background: #333;
+  position  : fixed;
+  width     : 100%;
+}
+
+.nav-item {
+  font-size      : 20px;
+  color          : white;
+  text-decoration: none;
+  float          : left;
+  padding        : 20px;
+  line-height    : 24px;
+}
+
+.nav-item:hover {
+  background: #4eb151;
+}
+
+.nav-item:first-child {
+  background: #4eb151;
+}
+
+.nav-item .fas {
+  margin-right  : 10px;
+  vertical-align: baseline;
+}
+
+.container {
+  margin : 0 auto;
+  padding: 140px 0 50px;
+  width  : 1000px;
+}
+
+.article {
+  border : 1px solid lightgray;
+  padding: 10px;
+}
+
+.article>* {
+  float: left;
+}
+
+.article>img {
+  width: 20%;
+}
+
+.description {
+  width       : 80%;
+  box-sizing  : border-box;
+  padding-left: 10px;
+}
+
+.clearfix::after {
+  content: "";
+  clear  : both;
+  display: table;
+}
+
+.checkout-cart {
+  display        : flex;
+  justify-content: space-between;
+  margin         : 100px 0;
+  align-items    : flex-start;
+}
+
+.checkout-cart>div {
+  border       : 1px solid lightgray;
+  background   : whitesmoke;
+  border-radius: 4px;
+  box-sizing   : border-box;
+  padding      : 18px;
+}
+
+.checkout {
+  width: 75%;
+}
+
+.cart {
+  width         : 22%;
+  display       : flex;
+  flex-direction: column;
+  box-sizing    : border-box;
+  padding       : 18px;
+}
+
+.cart>[class^="cart-"] {
+  display        : flex;
+  justify-content: space-between;
+  height         : 28px;
+}
+
+.cart-total {
+  border-top : 2px solid lightgray;
+  padding-top: 12px;
+}
+
+.cart-item .item-name {
+  color: #3498DB;
+}
+
+.cart-title .fas {
+  margin-right: 4px;
+}
+
+.input-text {
+  display      : block;
+  border       : 1px solid lightgray;
+  border-radius: 6px;
+  width        : 100%;
+  height       : 40px;
+  margin       : 12px 0;
+  color        : #606770;
+  text-indent  : 10px;
+  box-sizing: border-box;
+}
+
+.checkout-submit {
+  color        : white;
+  background   : #333;
+  border-radius: 4px;
+  text-align   : center;
+  height       : 48px;
+  line-height  : 48px;
+  border       : none;
+  display      : block;
+  width        : 100%;
+  cursor: pointer;
+}
+
+.checkout-info {
+  display        : flex;
+  justify-content: space-between;
+}
+
+.billing {
+  width: 48%;
+}
+
+.payment {
+  width: 48%;
+}
+
+.billing-title,
+.payment-title {
+  font-size  : 18px;
+  font-weight: bold;
+  height     : 54px;
+}
+
+.checkout-info ul {
+  list-style-type: none;
+}
+
+.checkout-info .fas {
+  margin-right: 4px;
+}
+
+.checkout-info ul li {
+  font-size: 14px;
+  height: 92px;
+    overflow: hidden;
+}
+
+.accepted-cards {
+  padding: 20px 0;
+  font-size: 24px;
+}
+
+.checkout-info ul li {
+  box-sizing: border-box;
+}
+
+.accepted-cards .fa-cc-visa {
+  color: purple;
+}
+
+.accepted-cards .fa-cc-amex {
+  color: blue;
+}
+
+.accepted-cards .fa-cc-mastercard {
+  color: red;
+}
+
+.accepted-cards .fa-cc-discover {
+  color: orange;
+}
+
+.small-input {
+  display: flex;
+  justify-content: space-between;
+}
+
+.small-input li {
+  width: 46%;
+}
+
+.checkout-info ul li.same-address {
+  height: 46px;
+}
+
+.timeline {
+  position: relative;
+  background: darkslategray;
+  padding: 28px 48px;
+}
+
+.timeline:before {
+  content: '';
+  width: 6px;
+  background: white;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  bottom: 0;
+}
+
+.entry {
+  width: calc(50% - 48px);
+  float: left;
+  clear: both;
+  background: white;
+  border-radius: 4px;
+  position: relative;
+  padding: 12px;
+  box-sizing: border-box;
+}
+
+.entry:nth-child(2n) {
+  float: right;
+}
+
+.entry:before {
+  width: 10px;
+  height: 10px;
+  border: 4px solid orange;
+  border-radius: 100%;
+  background: white;
+  position: absolute;
+  top: 12px;
+  right: -55px;
+  content: '';
+}
+
+.entry:nth-child(2n):before {
+  left: -55px;
+}
+
+.entry:after {
+  position: absolute;
+  top: 10px;
+  right: -16px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 0 10px 16px;
+  border-color: transparent transparent transparent white;
+  content: '';
+}
+
+.entry:nth-child(2n):after {
+  left: -16px;
+  border-width: 10px 16px 10px 0;
+  border-color: transparent white transparent transparent;
+}
