@@ -279,3 +279,73 @@ li {
   border-width: 10px 16px 10px 0;
   border-color: transparent white transparent transparent;
 }
+
+.game {
+  width: 620px;
+  display: flex;
+  padding: 15px;
+  justify-content: center;
+  margin: 100px auto 0;
+  align-items: flex-end;
+}
+
+.sudoku {
+  width: 394px;
+  margin-right: 15px;
+  height: 394px;
+  background: #4eb151;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+  display: flex;
+  align-content: flex-start;
+}
+
+.sudoku > div {
+  margin-top: 1px;
+  width: 130px;
+  height: 130px;
+  background: yellow;
+}
+
+.sudoku-block:nth-child(4) {
+  background: lightpink;
+}
+
+.arrows {
+  width: 200px;
+  height: 200px;
+  background: lightcyan;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pivot {
+  width: 20px;
+  height: 20px;
+  background: red;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.pivot .fas {
+  position: absolute;
+}
+
+.pivot .fa-arrow-up {
+  top: -100%;
+}
+
+.pivot .fa-arrow-right {
+  right: -100%;
+}
+
+.pivot .fa-arrow-left {
+  left: -100%;
+}
+
+.pivot .fa-arrow-down {
+  bottom: -100%;
+}
+
